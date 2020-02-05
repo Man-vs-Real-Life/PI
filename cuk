@@ -1,36 +1,133 @@
-package com.example.pariwisata;
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pariwisata">
 
-import androidx.appcompat.app.AppCompatActivity;
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".GW4c"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW4b"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW4a"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW3c"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW3b"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW3a"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW2c"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW2b"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW2a"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW1c"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW1b"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW1a"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW4c"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW4b"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW4a"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW3c"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW3b"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW3a"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW2c"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW2b"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW2a"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW1c"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW1b"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW1a"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW4"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW3"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GW1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW4"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW3"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BW1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".InfoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GarutActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BandungActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MenuActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
-public class BandungActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bandung);
-    }
-    public void bw1 (View view) {
-        Intent bw1 = new Intent (BandungActivity.this,BW1.class);
-        startActivity(bw1);
-    }
-
-    public void bw2 (View view) {
-        Intent bw2 = new Intent (BandungActivity.this,BW2.class);
-        startActivity(bw2);
-    }
-
-    public void bw3 (View view) {
-        Intent bw3 = new Intent (BandungActivity.this,BW3.class);
-        startActivity(bw3);
-    }
-
-    public void bw4 (View view) {
-        Intent bw4 = new Intent (BandungActivity.this,BW4.class);
-        startActivity(bw4);
-    }
-
-}
+</manifest>
