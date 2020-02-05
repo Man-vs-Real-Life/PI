@@ -1,0 +1,36 @@
+package com.example.pariwisata;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+public class BandungActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_bandung);
+    }
+    public void bw1 (View view) {
+        Intent bw1 = new Intent (BandungActivity.this,BW1.class);
+        startActivity(bw1);
+    }
+
+    public void bw2 (View view) {
+        Intent bw2 = new Intent (BandungActivity.this,BW2.class);
+        startActivity(bw2);
+    }
+
+    public void bw3 (View view) {
+        Intent bw3 = new Intent (BandungActivity.this,BW3.class);
+        startActivity(bw3);
+    }
+
+    public void bw4 (View view) {
+        Intent bw4 = new Intent (BandungActivity.this,BW4.class);
+        startActivity(bw4);
+    }
+
+}
